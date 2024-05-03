@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap-icons-1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-------------------------line 17----------------------------------------->
+<div class="container">
+    <div class="login">
+        <h3>sign in</h3>
+        <input id="user" class="text" type="text" placeholder="Username" required>
+        <input id="password" class="password" type="password" placeholder="Password" required>
+        <input id="submit" type="submit" value="Login">
+        <a href="#" id="forget"><p class="pass">forget password</p></a>
+        <p class="error"></p>
+    </div>
+    <div class="card-description">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p class="descrption">Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Delectus itaque qui mo
+            lestiae error dolor doloribus.
+        </p>
+        <button>read more</button>
+    </div>
+    <div class="forget-pass">
+        <div class="info">
+        <p class="title">find your account</p>
+        <hr>
+        <p class="text-info">just enter your email address or mobile number to search for your account</p>
+        <input class="search-text" placeholder="email address or mobile number"  type="text">
+        </div>
+        <button onclick="getForget()" class="concel-btn">Concel</button>
+        <button class="search-btn">search</button>
+    </div>    
+</div>
+<!-------------------------line 292----------------------------------------->
+<div class="cruds-stoke">
+        <!-------------------------line 193----------------------------------------->
+    <div class="menu">
+        <div class="profile">
+            <div class=" img">
+            <img id="img-prof" alt="photo">
+            </div>
+            <p class="nom-prof">Maher Riahi</p>
+        </div>
+        <div class="menu-item">
+            <ul>
+                
+                <li id="home-m">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <p class="menu_t">home</p>
+                    </a>
+                </li>
+                <li id="customer-m">
+                    <a href="#">
+                        <i class="fas fa-user-group"></i>
+                        <p class="menu_t">customers</p>
+                    </a>
+                </li>
+                <li id="product-m">
+                    <a href="#">
+                        <i class="fas fa-table"></i>
+                        <p class="menu_t">products</p>
+                    </a>
+                </li>
+                <li id="static-m">
+                    <a href="#">
+                        <i class="fas fa-chart-pie"></i>
+                        <p class="menu_t">statistic</p>
+                    </a>
+                </li>
+                <li id="post-m">
+                    <a href="#">
+                        <i class="fas fa-pen"></i>
+                        <p class="menu_t">posts</p>
+                    </a>
+                </li>
+                <li id="favorite-m">
+                    <a href="#">
+                        <i class="fas fa-star"></i>
+                        <p class="menu_t">favorite</p>
+                    </a>
+                </li>
+                <li id="sitting-m">
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <p class="menu_t">sitting</p>
+                    </a>
+                </li>
+                <li id="Exit-m">
+                    <a href="#"  class="menu_t">
+                        <i class="fas fa-sign-out"></i>
+                        <p class="menu_t">Exit</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <!-------------------------line 297----------------------------------------->
+    <div class="content">
+        <!-------------------------line 533----------------------------------------->
+        <div class="home-menu"> 
+    <div class="navbar media-nav ">
+        <div class="img-dash">
+            <div class="img-alt">
+                <img class="img-log" src="image/dashboard2.png" alt="dashboard-info">
+            </div>
+            <div class="alt-log log-menu">
+                <p id="dash">Dashboard</p>
+                <p id="tech">Technologie</p>
+            </div>
+        </div>
+        <div class="search-total">
+            <input  type="text" placeholder="search of category">
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+    <div class="boxes box-home-index">
+        <div class="box-client box-cat Customers-1">
+            <div class="log-client box-log">
+                <img src="image/client.png" alt="client">
+            </div>
+            <div class="inf-static">
+                <p>Customers</p>
+                <span class="num-val" data-val="2570,22">000</span>
+            </div>
+        </div>
+        <div class="box-products box-cat products-2">
+            <div class="log-products box-log">
+                <img src="image/products.png" alt="products">
+            </div>
+            <div class="inf-static">
+                <p>products</p>
+                <span class="num-val" data-val="2562">000</span>
+            </div>
+        </div>
+        <div class="box-finance box-cat Finance-3">
+            <div class="log-finance box-log">
+                <img src="image/finance.png" alt="finance">
+            </div>
+            <div class="inf-static">
+                <p>finance</p>
+                <span class="num-val" data-val="2220">000</span><span> $</span>
+            </div>
+        </div>
+        <div class="box-static box-cat static-4">
+            <div class="log-static box-log">
+                <img src="image/statistics.png" alt="static">
+            </div>
+            <div class="inf-static">
+                <p>static</p>
+                <span class="num-val" data-val="75">00</span><span>%</span>
+            </div>
+        </div>
+    </div>
+    <div class="box-bar">
+        <div class="client-info">
+            <p>Dashboard Technologie :Product Mangement System</p>
+        </div>
+        <div class="client">
+            <i class="fas fa-user" ></i>
+        </div>
+    </div>
+    <div class="box-table">
+     <div class="client-box-statistic">
+        <div class="client-table">
+            <div class="nom-client">
+                <p>Customers :</p>
+            </div>
+            <div class="progress-bar">
+                <div class="bar man">
+                  <span>100%</span>
+                </div>
+                                 
+            </div>
+        </div>
+        <div class="client-table">
+            <div class="nom-client">
+                <p>Products :</p>
+            </div>
+            <div class="progress-bar"> 
+                <div class="bar kids">
+                  <span>80%</span>
+                </div>
+                                 
+            </div>
+        </div>
+        <div class="client-table">
+            <div class="nom-client">
+                <p>Finance :</p>
+            </div>
+            <div class="progress-bar">
+                <div class="bar women">
+                  <span>70%</span>
+                </div>
+                                 
+            </div>
+        </div>
+        <div class="client-table">
+            <div class="nom-client">
+                <p>static :</p>
+            </div>
+            <div class="progress-bar">
+                <div class="bar gays">
+                  <span>50%</span>
+                </div>
+                                 
+            </div>
+        </div>
+     </div>
+     <div class="static-total">
+        <div class="progress-total" style="--per:85;--color:#007bff;">
+            <p>85 <span>%</span></p>
+            <h4>Total</h4>
+        </div>
+     </div>
+    </div>
+        </div>
+        <!-------------------------line 683----------------------------------------->
+        <div class="customers-menu cust-menu-media">
+            <div class="navbar nav-cust-media">
+                <div class="img-dash">
+                    <div class="img-alt">
+                        <img class="img-log" src="image/dashboard.jpg" alt="dashboard-info">
+                    </div>
+                    <div class="alt-log">
+                        <p id="dash">Customers</p>
+                    </div>
+                </div>
+                <div class="search-total">
+                    <input type="text" placeholder="search of category">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="boxes cust box-cust-media">
+                <div class="box-client box-cust">
+                    <div class="log-client box-log">
+                        <i class="bi bi-people-fill tout-cust"></i>
+                    </div>
+                    <div class="inf-static">
+                        <p>Total customers</p>
+                        <span class="num-val" data-val="2525">000</span>
+                    </div>
+                </div>
+                <div class="box-products box-cust">
+                    <div class="log-products box-log">
+                        <i class="bi bi-person-fill-add meb-cust"></i>
+                    </div>
+                    <div class="inf-static">
+                        <p>Members</p>
+                        <span class="num-val" data-val="1458">000</span>
+                    </div>
+                </div>
+                <div class="box-finance box-cust">
+                    <div class="log-finance box-log">
+                        <i class="bi bi-person-fill-check activ-cust"></i>
+                    </div>
+                    <div class="inf-static">
+                        <p>Active now</p>
+                        <span class="num-val" data-val="452">000</span>
+                    </div>
+                </div>
+                
+            </div>  
+            <div class="box-bar filter">
+                <div class="filter-cust">
+                    <i class="bi bi-filter-left" id="icone-fil"></i>
+                    <p>More filters</p>
+                </div>
+            </div>
+            <div class="item-filter">
+                <ul>
+                    <li class="houver">by email </li>
+                    <li class="houver">by name </li>
+                    <li class="houver">by date </li>
+                    <li class="houver">by letter </li>
+                </ul>
+            </div>
+            <div class="box-bar table-cast  ">  
+                <!-----------------------------------------------------methode par <div>-->             
+                <div class="data-general gen1 gen1-mar">
+                 <div class="cust-selectd profile-cust-gen1">
+                        <div class="checbox">
+                            <input type="checkbox" class="chec">
+                        </div>
+                        <div class="span-select">
+                            <span>Customers selected</span>
+                        </div>
+                </div>
+                <div class="data-custm center">
+                <div class="plan">
+                  <p>plan</p>
+                </div>
+                <div class="bil-data">
+                      <p>billing data</p> 
+                </div>
+                <div class="amount">
+                        <p>amount</p>
+                </div>
+                <div class="users">
+                        <p>users</p>
+                </div>
+                </div>
+                </div>
+                <div class="data-general houver">
+                <div class="profile-cust">
+                    <div class="img-prf">
+                        <img src="image/maher.jpg" alt="maher">
+                    </div>
+                    <div class="prop-prf">
+                        <h6>maher riahi</h6>
+                        <p>riahimaher69@yahoo.fr</p>
+                    </div>
+                </div>
+                <div class="data-custm">
+                <div class="plan">
+                  <span>basic plan</span>
+                </div>
+                <div class="bil-data">
+                      <span>dec 1,2022</span> 
+                </div>
+                <div class="amount">
+                        <span>usd $10.25</span>
+                </div>
+                <div class="users">
+                        <span>10 users</span>
+                </div>
+                </div>
+                </div>
+                <div class="data-general houver">
+                    <div class="profile-cust">
+                        <div class="img-prf">
+                            <img src="image/maher.jpg" alt="maher">
+                        </div>
+                        <div class="prop-prf">
+                            <h6>maher riahi</h6>
+                            <p>riahimaher69@yahoo.fr</p>
+                        </div>
+                    </div>
+                    <div class="data-custm">
+                    <div class="plan">
+                      <span>basic plan</span>
+                    </div>
+                    <div class="bil-data">
+                          <span>fev 2,2023</span> 
+                    </div>
+                    <div class="amount">
+                            <span>usd $25.24</span>
+                    </div>
+                    <div class="users">
+                            <span>30 users</span>
+                    </div>
+                   </div>
+                    </div>
+                    <div class="data-general houver">
+                        <div class="profile-cust">
+                            <div class="img-prf">
+                                <img src="image/maher.jpg" alt="maher">
+                            </div>
+                            <div class="prop-prf">
+                                <h6>maher riahi</h6>
+                                <p>riahimaher69@yahoo.fr</p>
+                            </div>
+                        </div>
+                        <div class="data-custm">
+                        <div class="plan">
+                          <span>basic plan</span>
+                        </div>
+                        <div class="bil-data">
+                              <span>mars 30,2023</span> 
+                        </div>
+                        <div class="amount">
+                                <span>usd $45.23</span>
+                        </div>
+                        <div class="users">
+                                <span>100 users</span>
+                        </div>
+                        </div>
+                        </div> 
+                <!-----------------------------------------------------methode par list <ul>-->             
+                        <div class="data-general houver list">
+                            <div class="profile-cust">
+                                <div class="img-prf">
+                                    <img src="image/maher.jpg" alt="maher">
+                                </div>
+                                <div class="prop-prf">
+                                    <h6>maher riahi</h6>
+                                    <p>riahimaher69@yahoo.fr</p>
+                                </div>
+                            </div>
+                            <div class="data-custm">
+                                <ul>
+                                    <li>basic plan</li>
+                                    <li>jan 14,2015</li>
+                                    <li>usd $23.36</li>
+                                    <li>25 users</li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="data-general houver list">
+                                <div class="profile-cust">
+                                    <div class="img-prf">
+                                        <img src="image/maher.jpg" alt="maher">
+                                    </div>
+                                    <div class="prop-prf">
+                                        <h6>maher riahi</h6>
+                                        <p>riahimaher69@yahoo.fr</p>
+                                    </div>
+                                </div>
+                                <div class="data-custm x">
+                                    <ul>
+                                        <li>basic plan generale</li>
+                                        <li>jan 14,2015</li>
+                                        <li>usd $23.3621</li>
+                                        <li>25 users</li>
+                                    </ul>
+                                </div>
+                                </div>
+                                  
+            </div>
+        </div>
+        <!-------------------------line 687----------------------------------------->
+        <div class="products-menu">
+            <div class="navbar nav-prod-media">
+                <div class="img-dash">
+                    <div class="img-alt">
+                        <img class="img-log" src="image/dashboard.jpg" alt="dashboard-info">
+                    </div>
+                    <div class="alt-log">
+                        <p id="dash">Products</p>
+                    </div>
+                </div>
+                <div class="search-total">
+                    <input onkeyup="getSearsh(this.value)" id="search" type="text" placeholder="search of category">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div> 
+            <div class="title-bar title-nav-box">
+                <p>Products mangement system</p>
+            </div>
+            <div class="products-stock">
+                <div class="box-prod-stock ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-box-seam-fill"></i>
+                    </div>
+                    <div class="desc-prod-stock">
+                        <p>products in stock</p>
+                        <span class="num-val" data-val="1200">000</span>
+                    </div>
+                </div>
+                <div class="box-prod-sold ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-cart4"></i>
+                    </div>
+                    <div class="desc-prod-sold">
+                        <p>products sold</p>
+                        <span class="num-val" data-val="1213">000</span>
+                    </div>
+                </div>
+                <div class="box-prod-miss ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <div class="desc-prod-stock">
+                        <p>missing products</p>
+                        <span class="num-val" data-val="912">000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="title-bar kinds ">
+                <div class="bar-kinds">
+                <p>all kinds of products</p>
+                </div>
+                <div class="bar-add adu">
+                    <div class="log-add">
+                        <i class="bi bi-plus-square-fill"></i>  
+                    </div>
+                    <div class="desc-add">
+                        <span>add</span>
+                    </div>
+                </div>
+                <div class="bar-upd adu">
+                    <div class="log-upd">
+                        <i class="bi bi-arrow-repeat"></i>
+                    </div>
+                    <div class="desc-upd">
+                        <span>upd</span>
+                    </div>
+                </div>
+                <div class="bar-dell adu">
+                    <div class="log-add">
+                        <i class="bi bi-trash"></i>
+                    </div>
+                    <div class="desc-del">
+                        <span>dell</span>
+                    </div>
+                </div>
+            </div> 
+            <div class="adup-prod">
+                <div class="tit-add">
+                    <h4>Add product</h4>
+                </div>
+                <div class="form" >
+                    <div class="add-prod-1 ap">
+                        <input onkeyup="getTotal()" class="input-add-prod " placeholder="Product Name" type="text" id="title">
+                        <input onkeyup="getTotal()" class="input-add-prod " placeholder="SKU" type="number" id="SKU">
+                    </div>
+                    <div class="add-prod-2 ap">
+                        <input onkeyup="getTotal()" class="input-add-prod " placeholder="Price" type="text" id="price">
+                        <input onkeyup="getTotal()" class="input-add-prod " placeholder="Quantity" type="number" id="Quantity">
+                    </div>
+                    <div class="add-prod-3 ap">
+                        <input onkeyup="getTotal()" class="input-add-prod " placeholder="Tax Class" type="number" id="tax-class">
+                        <input onkeyup="getTotal()" class="input-add-prod " placeholder="Tax Status" type="number" id="tax-status">
+                    </div> 
+                    
+         </div>
+         <small id="total"></small>
+         <div class="list-add-upd">
+            <ul>
+                <li id="add-adup">Add</li>
+                <li id="upd-adup">Upd</li>
+            </ul>
+        </div>
+            </div>
+            <div class="dell-prod">
+            <div class="bar-dell-all">
+            <div class="title-dell-all">
+                <p>Confirm delete</p> 
+            </div>
+            <div class="dell-log-all">
+                <i class="bi bi-x-octagon-fill" id="croi"></i>
+            </div>
+            </div>
+            <div class="par-dell-all">
+                <p id="p-dell">Are you sure to delete All products !</p>
+            </div>
+            <div class="btn-dell-all">
+                <button id="cancle">cancle</button>
+                <button id="dell-ALL-Prod">Delete</button>
+            </div>
+            </div>
+            <div class="table-products tab-prod-media">
+            <table>
+                <thead>
+                <tr>
+                <th>  title  </th>
+                <th>  price </th>
+                <th>   SKU </th>
+                <th>  tax-c  </th>
+                <th>  tax-s  </th>
+                <th>  Quantity  </th>
+                <th> Total </th>
+                <th> upd</th>
+                <th>dell </th>
+            </tr>
+            </thead>
+                <tbody id="tbody">
+            </tbody>
+            </table>
+            </div>
+            <button class="btn-scroll">^</button>
+        </div>
+        <!-------------------------line 943----------------------------------------->
+        <div class="favorite-menu">
+            <div class="navbar nav-media">
+                <div class="img-dash">
+                    <div class="img-alt">
+                        <img class="img-log" src="image/dashboard.jpg" alt="dashboard-info">
+                    </div>
+                    <div class="alt-log">
+                        <p id="dash">Favortie</p>
+                    </div>
+                </div>
+                <div class="search-total">
+                    <input type="text" placeholder="search of category">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="products-stock statistic">
+                <div class="box-prod-stock ssm stat">
+                    <div class="log-prod-stock stat-img">
+                        <img src="image/tablet.png" alt="im0">
+                    </div>
+                    <div class="desc-prod-stock fav-stat">
+                        <p>tablette apple</p>
+                        <span>70%</span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+                <div class="box-prod-sold ssm stat">
+                    <div class="log-prod-stock stat-img">
+                        <img id="iphone" src="image/1.png" alt="">
+                    </div>
+                    <div class="desc-prod-sold fav-stat">
+                        <p>iphone pro max</p>
+                        <span>80%</span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+                <div class="box-prod-miss ssm stat">
+                    <div class="log-prod-stock stat-img">
+                        <img src="image/pc3.png" alt="">
+                    </div>
+                    <div class="desc-prod-stock fav-stat">
+                        <p>hp laptope</p>
+                        <span>50.3%</span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="products-stock statistic">
+                <div class="box-prod-stock ssm stat">
+                    <div class="log-prod-stock stat-img">
+                        <img src="image/asus.jpg" alt="im0">
+                    </div>
+                    <div class="desc-prod-stock fav-stat">
+                        <p>asus laptope</p>
+                        <span>72.3%</span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+                <div class="box-prod-sold ssm stat">
+                    <div class="log-prod-stock stat-img">
+                        <img src="image/camera.png" alt="">
+                    </div>
+                    <div class="desc-prod-sold fav-stat">
+                        <p>canon camera</p>
+                        <span>85.6%</span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+                <div class="box-prod-miss ssm stat">
+                    <div class="log-prod-stock stat-img">
+                        <img src="image/print.png" alt="">
+                    </div>
+                    <div class="desc-prod-stock fav-stat">
+                        <p>printer canon</p>
+                        <span>46.8%</span>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="title-bar kinds bar-comment">
+                <div class="bar-kinds">
+                <p>comments on products</p>
+                </div>
+                <div class="bar-add adu">
+                    <div class="log-add down">
+                        <i class="bi bi-chat-left-dots"></i>
+                    </div>
+                    <div class="desc-add">
+                        <span>message</span>
+                    </div>
+                </div>
+                <div class="bar-upd adu ups">
+                    <div class="log-upd">
+                        <i class="bi bi-filter"></i>
+                    </div>
+                    <div class="desc-upd">
+                        <span>filter</span>
+                    </div>
+                </div>
+                <div class="bar-dell adu dell-c">
+                    <div class="log-add">
+                        <i class="bi bi-trash"></i>
+                    </div>
+                    <div class="desc-del">
+                        <span>dell</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dell-prod dell-comments">
+                <div class="bar-dell-all">
+                <div class="title-dell-all">
+                    <p>Confirm delete</p> 
+                </div>
+                <div class="dell-log-all">
+                    <i class="bi bi-x-octagon-fill" id="croi"></i>
+                </div>
+                </div>
+                <div class="par-dell-all">
+                    <p>Are you sure to delete All products !</p>
+                </div>
+                <div class="btn-dell-all">
+                    <button id="cancle">cancle</button>
+                    <button>Delete</button>
+                </div>
+                </div>
+            <div class="box-bar table-cast comments  ">  
+                <!-----------------------------------------------------methode par <div>-->             
+                <div class="data-general gen1 bar-fav-pro">
+                 <div class="cust-selectd profile-cust-gen1">
+                        <div class="checbox">
+                            <input type="checkbox" class="chec">
+                        </div>
+                        <div class="span-select">
+                            <span>Customers selected</span>
+                        </div>
+                </div>
+                <div class="data-custm center">
+                <div class="plan">
+                  <p>All comments</p>
+                </div>
+                </div>
+                </div>
+                <div class="data-general houver">
+                <div class="profile-cust">
+                    <div class="img-prf">
+                        <img src="image/maher.jpg" alt="maher">
+                    </div>
+                    <div class="prop-prf">
+                        <h6>maher riahi</h6>
+                        <p>riahimaher69@yahoo.fr</p>
+                    </div>
+                </div>
+                <div class="data-custm star-fav">
+                    <div class="comment">         
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fugit!</p>                
+                 </div>
+                  <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                </div>
+                </div>
+                <!-----------------------------------------------------methode par list <ul>-->             
+                        <div class="data-general houver ">
+                            <div class="profile-cust">
+                                <div class="img-prf">
+                                    <img src="image/maher.jpg" alt="maher">
+                                </div>
+                                <div class="prop-prf">
+                                    <h6>maher riahi</h6>
+                                    <p>riahimaher69@yahoo.fr</p>
+                                </div>
+                            </div>
+                            <div class="data-custm star-fav">
+                                <div class="comment">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, facere.</p>
+                                </div>
+                                <div class="star">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star"></i>
+                                  </div>
+                            </div>
+                            </div>
+                            <div class="data-general houver ">
+                                <div class="profile-cust">
+                                    <div class="img-prf">
+                                        <img src="image/maher.jpg" alt="maher">
+                                    </div>
+                                    <div class="prop-prf">
+                                        <h6>maher riahi</h6>
+                                        <p>riahimaher69@yahoo.fr</p>
+                                    </div>
+                                </div>
+                                <div class="data-custm star-fav">
+                                    <div class="comment">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, iusto.</p>
+                                    </div>
+                                    <div class="star">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                      </div>
+                                </div>
+                                </div>
+                                  
+            </div>
+          
+            
+        </div>
+        <!-------------------------line 987----------------------------------------->
+        <div class="statistic-menu">
+            <div class="navbar">
+                <div class="img-dash">
+                    <div class="img-alt">
+                        <img class="img-log" src="image/dashboard.jpg" alt="dashboard-info">
+                    </div>
+                    <div class="alt-log">
+                        <p id="dash">Statistic</p>
+                    </div>
+                </div>
+                <div class="search-total">
+                    <input type="text" placeholder="search of category">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div> 
+            <div class="products-stock">
+                <div class="box-prod-stock ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-cart-check"></i>
+                    </div>
+                    <div class="desc-prod-stock">
+                        <p>Total order</p>
+                        <span class="num-val" data-val="87">000</span><span>%</span>
+                    </div>
+                </div>
+                <div class="box-prod-sold ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-cart4"></i>
+                    </div>
+                    <div class="desc-prod-sold">
+                        <p>total sales</p>
+                        <span class="num-val" data-val="77">000</span><span>%</span>
+                    </div>
+                </div>
+                <div class="box-prod-miss ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-basket3-fill"></i>
+                    </div>
+                    <div class="desc-prod-stock">
+                        <p>total profit</p>
+                        <span class="num-val" data-val="72">000</span><span>%</span>
+                    </div>
+                </div>
+                <div class="box-prod-miss ssm">
+                    <div class="log-prod-stock">
+                        <i class="bi bi-cart-dash"></i>
+                    </div>
+                    <div class="desc-prod-stock">
+                        <p>total return</p>
+                        <span class="num-val" data-val="11">000</span><span>%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="title-bar kinds">
+                <div class="bar-kinds">
+                <p>recent sales</p>
+                </div>
+                <div class="bar-add adu">
+                    <div class="log-add up">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <div class="desc-add">
+                        <span>up</span>
+                    </div>
+                </div>
+                <div class="bar-upd adu">
+                    <div class="log-upd down">
+                        <i class="bi bi-graph-down-arrow"></i>
+                    </div>
+                    <div class="desc-upd">
+                        <span>down</span>
+                    </div>
+                </div>
+                <div class="bar-dell adu remouve-st">
+                    <div class="log-add">
+                        <i class="bi bi-trash"></i>
+                    </div>
+                    <div class="desc-del">
+                        <span>dell</span>
+                    </div>
+                </div>
+            </div>
+            <div class="dell-prod dell-s">
+                <div class="bar-dell-all">
+                <div class="title-dell-all">
+                    <p>Confirm delete</p> 
+                </div>
+                <div class="dell-log-all">
+                    <i class="bi bi-x-octagon-fill" id="croi-s"></i>
+                </div>
+                </div>
+                <div class="par-dell-all">
+                    <p>Are you sure to delete All products !</p>
+                </div>
+                <div class="btn-dell-all">
+                    <button id="cancle-s">cancle</button>
+                    <button>Delete</button>
+                </div>
+                </div>
+            <div class="table-products tab-sel">
+                <div class="tab">
+                <table>
+                    <thead>
+                    <tr>
+                    <th>  date  </th>
+                    <th>  customers  </th>
+                    <th>  sales  </th>
+                    <th>  total  </th>
+                    <th> update </th>
+                    <th> delete</th></tr>
+                </thead>
+                    <tbody>
+                    <tr>
+                        <td>12/23</td>
+                        <td>hadi</td>
+                        <td>delivred</td>
+                        <td>1500$</td>
+                        <td><i class="bi bi-arrow-repeat"></i></td>
+                        <td><i class="bi bi-trash"></i></td>
+                    </tr>
+                    <tr>
+                        <td>14/23</td>
+                        <td>mourad</td>
+                        <td>delivred</td>
+                        <td>1200$</td>
+                        <td><i class="bi bi-arrow-repeat"></i></td>
+                        <td><i class="bi bi-trash"></i></td>
+                    </tr>
+                </tbody>
+                </table>
+                 </div>
+                 <div class="sel-prod">
+                    <div class="data-general houver par-sel mar-sel">
+                        <p> Top seling product </p>
+                    </div>
+                    <div class="data-general houver mar-sel">
+                        <div class="profile-cust wid-prof">
+                            <div class="img-prf img-sel">
+                                <img src="image/asus.jpg" alt="maher">
+                            </div>
+                            <div class="prop-prf">
+                                <h6>asus laptope intel i3</h6>
+                            </div>
+                        </div>
+                        <div class="sel-data">
+                            <div class="comment">         
+                          <span>1200$</span>                
+                         </div>
+                          <div class="star">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        </div>
+                 </div>
+                 <div class="data-general houver mar-sel">
+                    <div class="profile-cust wid-prof">
+                        <div class="img-prf img-sel">
+                            <img src="image/camera.png" alt="maher">
+                        </div>
+                        <div class="prop-prf">
+                            <h6>camera canon</h6>
+                        </div>
+                    </div>
+                    <div class="sel-data">
+                        <div class="comment">         
+                      <span>1200$</span>                
+                     </div>
+                      <div class="star">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                    </div>
+             </div>
+             <div class="data-general houver mar-sel">
+                <div class="profile-cust wid-prof">
+                    <div class="img-prf img-sel">
+                        <img src="image/tablet.png" alt="maher">
+                    </div>
+                    <div class="prop-prf">
+                        <h6>Tablet pro max</h6>
+                    </div>
+                </div>
+                <div class="sel-data">
+                    <div class="comment">         
+                  <span>1200$</span>                
+                 </div>
+                  <div class="star">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                </div>
+         </div>
+                </div>
+                </div> 
+        </div>
+        <!-------------------------line 1144----------------------------------------->
+        <div class="posts-menu">
+            <div class="navbar nav-post-menu">
+                <div class="img-dash">
+                    <div class="img-alt">
+                        <img class="img-log" src="image/dashboard.jpg" alt="dashboard-info">
+                    </div>
+                    <div class="alt-log">
+                        <p id="dash">Messages</p>
+                    </div>
+                </div>
+                <div class="search-total">
+                    <input type="text" placeholder="search of category">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="msj-list">
+                <div class="interf-msj">
+                <div class="title-msj">
+    <p>private message</p>
+                </div>
+                <div class="interface">
+        <div class="data-general houver mar-sel">
+            <div class="profile-cust wid-prof prof-flow">
+                <div class="img-prf img-sel imj-foll">
+                    <img src="image/maher.jpg" alt="maher">
+                </div>
+                <div class="prop-prf">
+                    <h6>Maher riahi</h6>
+                    <p>riahimaher69@yahoo.fr</p>
+                </div>
+            </div>
+            <div class="sel-data">
+                <div class="comment-flo"> 
+                    <ul>
+                        <li><span>flowres</span><i class="bi bi-plus"></i> </li>
+                    </ul>        
+             </div>
+            </div>
+       </div>
+        <div class="inter-par">
+        <p>private note</p>
+        <i class="bi bi-stickies-fill"></i>
+        </div>
+        <div class="bar-outil">
+        
+            <button id="bold" class="option-button"><i class="bi bi-type-bold"></i></button>
+            <button id="italic" class="option-button"><i class="bi bi-type-italic"></i></button>
+            <button id="underline" class="option-button"><i class="bi bi-type-underline"></i></button>
+            <button id="strikethrough" class="option-button"><i class="bi bi-type-strikethrough"></i></button>
+            <button id="superscript" class="option-button"><i class="bi bi-superscript"></i></button>
+            <button id="subscript" class="option-button"><i class="bi bi-subscript"></i></button>
+            <button id="undo" class="option-button"><i class="bi bi-arrow-counterclockwise"></i></button>
+            <button id="redo" class="option-button"><i class="bi bi-arrow-clockwise"></i></button>
+            <button id="insertOrderedList" class="option-button"><i class="bi bi-list-ol"></i></button>
+            <button id="insertUnorderedList" value="" class="option-button"><i class="bi bi-list-ul"></i></button>
+            <button id="justifyLeft" class="option-button"><i class="bi bi-justify-left"></i></button>
+            <button id="justifyCenter" class="option-button"><i class="bi bi-text-center"></i></button>
+            <button id="justifyRight" class="option-button"><i class="bi bi-justify-right"></i></button>
+            <button id="justifyFull" class="option-button"><i class="bi bi-justify"></i></button>
+            <button id="indent" class="option-button"><i class="bi bi-text-indent-left"></i></button>
+            <button id="outdent" class="option-button"><i class="bi bi-text-indent-right"></i></button>
+            <button id="createLink" class="adv-option-button"><i class="bi bi-link"></i></button>
+            <button id="unlink" class="option-button"><i class="bi bi-link-45deg"></i></button>                                
+            <select id="fontName" class="adv-option-button"></select>
+            <select id="fontSize" class="adv-option-button"></select>
+            <select id="formatBlock" class="adv-option-button">          
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
+            <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button">
+                <label class="foreColor" for="foreColor"><i class="bi bi-eyedropper"></i></label>
+             </div>
+            <div class="input-wrapper">
+        <input type="color" id="backColor" class="adv-option-button">
+        <label class="backColor" for="backColor"><i class="bi bi-paint-bucket"></i></label>
+            </div>
+        </div>
+        <div class="bloc-text">
+        <div class="input-text" contenteditable="true">
+        </div>
+        </div>
+        <div class="envoyer">
+            <span><a href="#">Send</a></span>
+            <span><a href="#">cancle</a></span>
+        </div>
+        <div class="inter-par social" >
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-messenger"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-instagram inst"></i>
+            </div>
+                </div>
+                </div>
+                <div class="list-cust-msj all-foll">
+                    <div class="all-list-msj">
+                        <h5>All list</h5>
+                    </div>
+                    <div class="cust-selectd profile-cust-gen1 chec-posts">
+                        <div class="checbox">
+                            <input type="checkbox" class="chec">
+                        </div>
+                        <div class="span-select">
+                            <span>Customers selected</span>
+                        </div>
+                </div>
+                    <div class="data-general houver msj-list-env marj-bott">
+                        <div class="profile-cust wid-prof foll-prof">
+                            <div class="img-prf img-sel imj-foll">
+                                <img src="image/maher.jpg" alt="maher">
+                            </div>
+                            <div class="prop-prf">
+                                <h6>mouhamed riahi</h6>
+                                <span>mouhamed@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="sel-data foll-data">
+                          <span>follow +</span>                
+                         </div>
+                     
+                 </div>
+                 <div class="data-general houver msj-list-env marj-bott">
+                    <div class="profile-cust wid-prof foll-prof">
+                        <div class="img-prf img-sel imj-foll">
+                            <img src="image/maher.jpg" alt="maher">
+                        </div>
+                        <div class="prop-prf">
+                            <h6>mouhamed riahi</h6>
+                            <span>mouhamed@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="sel-data foll-data">
+                      <span>follow +</span>                
+                     </div>
+                 
+             </div>
+             <div class="data-general houver msj-list-env marj-bott">
+                <div class="profile-cust wid-prof foll-prof">
+                    <div class="img-prf img-sel imj-foll">
+                        <img src="image/maher.jpg" alt="maher">
+                    </div>
+                    <div class="prop-prf">
+                        <h6>mouhamed riahi</h6>
+                        <span>mouhamed@gmail.com</span>
+                    </div>
+                </div>
+                <div class="sel-data foll-data">
+                  <span>follow +</span>                
+                 </div>
+             
+         </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------line 1299----------------------------------------->
+        <div class="sitting-menu">
+            <div class="navbar nav-media ">
+                <div class="img-dash">
+                    <div class="img-alt">
+                        <img class="img-log" src="image/dashboard.jpg" alt="dashboard-info">
+                    </div>
+                    <div class="alt-log">
+                        <p id="dash">Sitting</p>
+                    </div>
+                </div>
+                <div class="search-total">
+                    <input type="text" placeholder="search of category">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="interface-menu">
+          <div class="sitting-item">
+<div class="pref-compt houver style">
+    <i class="bi bi-person"></i>
+    <p>Account performance</p>
+</div>
+<div class="security houver style">
+    <i class="bi bi-lock-fill"></i>
+    <p>identificatin and security</p>
+</div>
+<div class="imj-prof-sitting houver style">
+    <i class="bi bi-card-image"></i>
+    <p>change your image</p>
+</div>
+          </div>
+          <div class="sitting-interf">
+<div class="inter-compt">
+<input type="text" placeholder="change your name">
+<input type="text" placeholder="change your email">
+<input type="text" placeholder="change your number phone">
+<div class="btn-zon">
+<input type="button" value="valid">
+<input type="button" value="cancle">
+</div>
+</div>
+<div class="inter-securtiy">
+    <input type="password" placeholder="Current Password">
+    <input type="password" placeholder="New Password">
+    <input type="password" placeholder="Confirm Password">
+   <div class="btn-zon">
+    <input type="button" value="valid">
+    <input type="button" value="cancle">
+</div>
+</div>
+<div class="image-compte">
+  <div class="imj-comt">
+    <div class="box-image">
+        <img id="imgf" alt="nature">
+    </div>
+    <div class="upl-image">
+        <label id="label" for="upload">upload</label>
+        <input type="file" id="upload">
+    </div>
+  </div> 
+  <div class="filter-imj">
+<ul>
+    <li><label for="saturate">saturate</label><input type="range" id="saturate" min="0" max="200" value="100"></li>
+    <li><label for="brightness">brightness</label><input type="range" id="brightness" min="0" max="200" value="100"></li>
+    <li><label for="grayscale">grayscale</label><input type="range" id="grayscale" min="0" step="0.1" max="1" ></li>
+</ul>
+<div class="btn-img">
+<button id="valid">Valid</button><button id="reset">Cancle</button>
+</div>
+  </div> 
+</div>
+          </div> 
+        </div> 
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>

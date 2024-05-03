@@ -1,0 +1,1868 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn-scroll{
+    background: #007bff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+}
+.hiden{
+    display: none;
+}
+ input{
+    display: block;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    width: 70%;
+  
+
+}
+/******************************page container index*************************************/
+.container{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+    background: #99999921;
+}
+/**********************************************************************************************/
+.login{
+position: relative;
+background: beige;
+width: 400px;
+height: 400px;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+order: 2;
+z-index: 5;
+box-shadow: -5px 0px 3px 0px rgba(0, 0, 255, 0.137) ;
+}
+h3{
+    position: relative;
+    left: -30%;
+    top: -6%;
+    font-size:30px ;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.pass{
+    position: relative;
+    left: -50%; 
+    transition: 1.5s;  
+}
+.pass:hover{
+    scale: 0.8;
+    color: rgba(0, 0, 255, 0.432);
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #777;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+.card-description{
+    width: 400px;
+    height: 300px;
+    background: #17a2b8;
+    order: 1;
+    position: relative;
+    left: 8px;
+    z-index: 2;
+    color: white;
+}
+/*****************************interface login*******************************/
+.login,.card-description{
+    display: 0;
+}
+/***************************************************************************/
+/*****************************interface forget password*******************************/
+
+.forget-pass{
+    width: 600px;
+    height: 380px;
+    background:beige ;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2;
+    box-shadow: -5px 0px 3px 0px rgba(0, 0, 255, 0.137) ;
+}
+/************************************************************************************/
+
+.info{
+    margin: 50px 20px;
+}
+.text-info{
+    margin: 30px 20px;
+
+}
+.search-text,.title{
+margin: 0 20px;
+}
+.title{
+    font-weight:600 ;
+    font-size: 20px;
+}
+.concel-btn,.search-btn{
+    position: relative;
+    top: -40px;
+    left: 40px;
+    background: #007bff;
+    border-radius: 4px;
+}
+.concel-btn{
+    background: #007bff63;
+}
+.concel-btn:hover{
+    background: #007bff;
+}
+.search-btn:hover{
+    background: #007bff63;
+}
+.search-text:hover{
+    scale: 1.09;
+}
+hr{
+    width: 90%;
+    margin: 20px 10px;
+}
+button{
+    padding: 8px;
+    outline: none;
+    border: none;
+    background: #dc3545;
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: .5s;
+    text-transform: capitalize;
+}
+button:hover{
+    background: rgba(228, 38, 165, 0.342);
+
+}
+.descrption,h2,button{
+    margin:30px 10px ;
+}
+.descrption{
+letter-spacing: 1px;
+line-height: 2;
+}
+.descrption::first-letter,.text-info::first-letter,.title::first-letter{
+    text-transform: capitalize;
+}
+#submit{
+    background: rgba(0, 0, 255, 0.664);
+    cursor: pointer;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 17px;
+    transition: 0.5s;
+}
+.text:hover,.password:hover{
+    scale: 1.09;
+}
+.text,.password,.search-text{
+    transition: 0.5s;
+}
+#submit:hover{
+    background: rgba(0, 0, 255, 0.397);
+}
+/*****************************interface menu general*******************************/
+.menu{
+    background: black;
+    width: 52px;
+    height: 100vh;
+    padding: 20px 5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+/*****************************interface menu general*******************************/
+.menu{
+    display: 0;
+}
+/**********************************************************************************/
+.menu:hover{
+    background: #007bff;
+    width: 250px;
+
+}
+.fas,.menu_t,.nom-prof {
+    color: white;
+}
+.menu ul li a{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 10px 0;
+    margin:8px 10px ;
+    border-radius: 8px;
+    transition: .5s;
+    font-size: 17px;
+}
+.menu ul li a i{
+    margin-left: 5px;
+}
+menu ul {
+list-style: none;
+}
+ul li a:hover{
+    background: #17a;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 1px;
+}
+img{
+    width: 100%;
+}
+.nom-prof{
+    font-size: 20px;
+    font-weight: 600;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px white solid;
+    flex-shrink: 0;
+
+
+}
+.navbar{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.img-dash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    gap: 10px;
+}
+#dash{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#tech{
+    letter-spacing: 1px; 
+}
+.img-alt{
+   width: 50px;
+   height: 50px;
+}
+.img-log{
+    width: 100%;
+}
+
+.search-total{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    top: -10px;
+    left: -30px;
+
+}
+.search-total input{
+    box-shadow: 35px 0px 0px 0px rgb(0, 0, 255);
+    border-radius: 0px ;
+    border: 1px solid blue;
+}
+.cruds-stoke{
+    display: flex;
+}
+/*****************************interface generale cruds*******************************/
+
+.content{
+    width: 100%;
+    display: block;
+}
+/*****************************interface content have every things(home,customers,products,...)*******************************/
+
+.boxes{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+.box-home-index{
+width: 70%;
+position: relative;
+left: 15%;
+}
+.box-cat::after{
+    content: '';
+    /* border-bottom: 2px solid red; */
+    background: rgba(255, 0, 0, 0.247);
+    width: 25%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: 3;
+
+
+}
+.Customers-1::after{
+    animation-name: Customers-1;
+}
+.products-2::after{
+    animation-name: products-2;
+    background: rgba(172, 255, 47, 0.199);
+}
+.Finance-3::after{
+    animation-name: Finance-3;
+    background: rgba(0, 0, 255, 0.137);
+}
+.static-4::after{
+    animation-name: static-4;
+    background: rgba(255, 255, 0, 0.274);
+}
+@keyframes Customers-1{
+
+    from{
+height: 2px;
+    }to{
+height: 150px;
+    }
+}
+@keyframes products-2{
+
+    from{
+height: 2px;
+    }to{
+height: 150px;
+    }
+}
+@keyframes Finance-3{
+
+    from{
+height: 2px;
+    }to{
+height: 150px;
+    }
+}
+@keyframes static-4{
+
+    from{
+height: 2px;
+    }to{
+height: 100%;
+    }
+}
+.box-cat{
+display: flex;
+align-items: center;
+gap: 50px;
+background: rgba(245, 245, 220, 0.473);
+height: 150px;
+width: 22%;
+flex-grow: 1;
+margin: 0 2px 0 0;
+transition: 0.5s;
+}
+.box-cust:hover,.ssm:hover,.adu:hover{
+    scale: 0.95;
+    cursor: pointer;
+}
+.box-log{
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+}
+.box-log img{
+    width: 100%;
+}
+.inf-static ::first-letter{
+    text-transform: capitalize;
+}
+.inf-static p{
+font-size: 18px;
+line-height: 2;
+}
+.inf-static span{
+    font-size: 30px;
+    font-weight: 900;
+}
+.box-bar{
+    width: 70%;
+    height: 40px;
+    position: relative;
+    left: 15%;
+    background: rgba(245, 245, 220, 0.418);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0px 0 -2px;
+  
+}
+.box-bar i{
+    color: black;
+    margin-right: 10px;
+}
+.client-info p{
+    margin-left: 10px;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.box-table{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    background:rgba(245, 245, 220, 0.418);
+    height: 300px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin:  2px 0 0 0;
+}
+
+.client-table{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 30px 0px;
+height: 30px;
+}
+.bar{
+    display: inline-block;
+    background: blue;
+    animation-duration: 3s;
+    animation-delay:0.5s ;
+    animation-fill-mode:forwards;
+}
+.log-menu{
+    color: white;
+}
+.man{
+    animation-name: man;
+    width: 100%;
+}
+.kids{
+    animation-name: kids; 
+    width: 80%;
+}
+.women{
+    animation-name: women; 
+    width: 70%;
+}
+.gays{
+    animation-name: gays; 
+    width: 50%;
+
+}
+@keyframes man{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes kids{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes women{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes gays{
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+.bar span{
+    font-size: 12px;
+    color: white;
+    margin: 50%;
+    
+}
+.nom-client p{
+margin: 0 18px;
+color: black;
+font-size: 18px;
+font-weight: 600;
+}
+.progress-bar{
+    width: 60%;
+}
+.progress-total{
+position: relative;
+width: 150px;
+height: 150px;
+background: #999 linear-gradient(to right, transparent 50% ,var(--color) 0 );
+border-radius: 50%;
+margin: 0 30px;
+
+}
+@keyframes total{
+    from{
+        transform: rotate(calc((((0) - 50) * 0.01turn)));
+
+    }
+    to{
+        transform: rotate(calc(((var(--per) - 50) * 0.01turn)));
+
+    }
+}
+.progress-total p{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1;
+
+}
+.progress-total span{
+    font-size: 15px;
+}
+.progress-total h4{
+    font-size: 2em;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+
+}
+.progress-total::before{
+    content: '';
+    height: 100%;
+    display: block;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0% 100% 100% 0/50%;
+    animation-duration: 3s;
+    animation-delay:0.5s ;
+    animation-fill-mode:forwards;
+    animation-name: total;
+}
+.progress-total::after{
+    content: '';
+    position: absolute;
+    background: (245, 245, 220, .445);
+    inset: 10px;
+    border-radius: 50%;
+}
+.progress-total::before{
+    background: var(--color);
+    transform: rotate(calc(((var(--per) - 50) * 0.01turn)));
+}
+.client-box-statistic{
+    display: block;
+    width: 60%;
+}
+/*****************************interface content home menu*******************************/
+
+.home-menu{
+    display: 0;
+    background: url(dashboard-background.png);
+    background-size: cover;
+    height: 100vh;
+}
+/***************************************************************************************/
+
+.box-cust{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: beige;
+    height: 150px;
+    width: 30%;
+    margin: 0 2px 0 0;
+    transition: 0.5s;
+    flex-grow: 1;
+    }
+    .boxes{
+        width: 70%;
+        position: relative;
+        left: 15%;
+        margin: 0 0 -3px 0;
+    }
+    .box-cust i{
+        font-size: 25px;
+    }
+   .tout-cust{
+        color: red;
+    }
+    .meb-cust{
+        color: blue;
+    }
+    .activ-cust{
+        color: green;
+    }
+    .filter-cust{
+        display: flex;
+        gap: 20px;
+        margin: 0 15px;
+    }.filter-cust i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .filter,.table-cast{
+        position: relative;
+        width: 70%;
+        left: 15%;
+        margin: 0px 0 2px 0;
+        background: white;
+            }
+ .filter{
+ background: beige;
+ height: 40px;
+ margin: 4px 0 2px 0;
+ position: relative;
+    }
+.filter p{
+        font-size: 17px;
+}
+.item-filter{
+position: absolute;
+left: 20%;
+width:200px ;
+height: 170px;
+background: beige;
+padding: 0 10px 0 0;
+text-transform: capitalize;
+transition: .5s;
+z-index: 1;
+    }
+.item-filter ul{
+list-style: none;
+height:100%;
+width: 100%;
+text-align: left;
+    }
+.item-filter ul li{
+    padding: 8px 0;
+    border-bottom: 1px solid #777;
+    cursor: pointer;
+    margin: 0 0 8px 8px;
+    }
+.cust-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+}
+.cust-selectd{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 10px;
+}
+.chec{
+    width: 100%;
+    cursor: pointer;
+    }
+.property-cust ul li{
+     display: inline;
+     margin: 0 50px;
+     font-weight: 600;     
+}
+.table-cast{
+    display: block;
+}
+.data-general{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    background: beige;
+    margin: 0 0 2px 0;
+}
+.houver{
+    transition: 0.5s;
+}
+.houver:hover{
+    background: #999;
+cursor: pointer;
+}
+.img-prf{
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.img-prf img{
+    flex-shrink: 0;
+    width: 100%;
+}
+/****************methode <ul>*************************/
+.data-custm ul li{
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+    margin: 0 1px 0 0;
+}
+.data-custm ul{
+    min-width: 100%;
+    display: block; 
+}
+.list{
+    margin: 0 0 2px 0 ;
+}
+/*****************************************/
+.gen1 {
+    font-weight:600 ;
+    text-transform: capitalize;
+    margin: 0px 0px 10px 0px;
+}
+.profile-cust,.profile-cust-gen1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin:0 0 12px 0 ;
+}
+.gen1-mar{
+    margin: 0 0 0 0;
+    border-bottom: 2px solid white;
+}
+.data-custm{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1px;
+}
+.plan,.bil-data,.amount,.users{
+width: 30%;
+}
+.profile-cust-gen1{
+    min-width: fit-content;
+}
+.center .plan{
+    margin: 0 2.5%;
+}
+/*****************************interface customers-menu*******************************/
+/**********************************************************************************/
+/*****************************interface products menu*******************************/
+/******************************************************************************/
+.title-bar{
+    width: calc(70% - 2px);
+    background: beige;
+    height:50px ;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    margin:0 0 2px 0 ;
+}
+#tbody tr{
+background: beige;
+transition: .5s;
+}
+.title-bar p{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 2;
+}
+.products-stock{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    display: flex;
+    justify-content: center;
+}
+.ssm{
+    width: 30%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: beige;
+    gap: 25%;
+    margin: 0 2px 0 0;
+    flex-grow: 1;
+    transition: 0.5s;     
+}
+.log-prod-stock{
+    font-size: 40px;
+}
+.ssm span{
+    font-size: 30px;
+    font-weight: 900;
+}
+.bar-kinds{
+width: 50%;
+}
+.kinds p{
+    text-align: left;
+    margin: 2%;
+}
+.kinds{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2px 0 3px 0;
+
+}
+thead{
+    position: relative;
+}
+thead::after{
+content:"";
+height: 2px;
+width: 100%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: blue;
+}
+.adu{
+    width: 15%;
+    cursor: pointer;
+    transition: .5s;
+    display: flex;
+    gap: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.adu i{
+    margin: 0 0 0 10px;
+}
+.table-products{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    margin: 0 0 0 0;
+}
+table{
+    border-spacing: 0px 3px;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+
+}
+th{
+    text-transform: capitalize;
+    background: #99999948;
+    height: 40px;
+}
+tbody tr{
+    background: beige;
+    height: 40px;
+   /* border: 1px solid red; use with <td>tags*/
+}
+tbody tr:hover,#tbody tr:hover{
+    background: #999;
+    cursor: pointer;
+}
+/*****************Add update dell prod*************************************/
+.adup-prod{
+    width: 70%;
+    position: relative;
+    min-height: 300px;
+    left: 15%;
+    background: beige;
+}
+/*****************dell prod*************************************/
+.dell-prod{
+width: 400px;
+height: 200px;
+background: beige;
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%,50%);
+z-index: 1;
+box-shadow: -5px 0px 5px 0px rgba(0, 0, 255, 0.137) ;
+/*************** dell all prod*********************/
+}
+/******************************************************/
+
+.bar-dell-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-bottom:2px solid #999;
+}
+.par-dell-all{
+    width:100% ;
+    height: 100px;
+    border-bottom: 2px solid #999;
+}
+.par-dell-all p{
+margin-left: 5%;
+line-height: 4;
+font-size: 18px;
+}
+.title-dell-all p{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.dell-log-all i{
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-dell-all{
+    position: relative;
+    bottom: 10%;
+    left: 50%;
+}
+#cancle{
+    background: #99999981;
+    color: black;
+}
+/****************************************************/
+.input-add-prod{
+width: 30%;
+border-radius: 10px;
+padding: 20px;
+display: inline;
+position: relative;
+left: 15%;
+margin-right: 15px;
+font-size: 17px;
+border: none;
+outline: none;
+transition: .5s;
+cursor: pointer;
+}
+.input-add-prod:hover{
+    scale: 1.06;
+}
+.form{
+    display: block;
+    width: 100%;
+    background: beige;
+    height: fit-content;   
+    margin-top: 40px;
+}
+.ap{
+ margin-bottom: 15px;   
+}
+.tit-add{
+background: beige;
+height: 40px;
+border-bottom: 3px solid blue;
+line-height: 3;
+}
+h4{
+    margin-left: 20px;
+}
+.list-add-upd ul{
+    height: 40px;
+    text-align: right;
+    margin-right: 15%;
+}
+
+.list-add-upd ul li{
+   display: inline-block;
+   margin-right: 10px;
+   padding: 3px;
+   width: 40px;
+   font-weight: 600;
+
+}
+.list-add-upd ul li:hover{
+    color: red;
+    cursor: pointer;
+}
+/*****************************interface products favorite*******************************/
+.statistic{
+    margin-bottom: 2px;
+}
+.stat-img{
+    width: 70px;
+}
+.stat-img img{
+    width: 100%;
+}
+.fav-stat span{
+    display: block;
+    margin-bottom: 10px;
+}
+.comments{
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+.comment{
+    width: 70%;
+}
+.star-fav{
+    gap: 5px;
+}
+.bar-comment{
+    margin: 0 0 3px 0;
+}
+.bar-fav-pro{
+    margin: 0 0 2px 0;
+}
+/*****************************interface products favorite*******************************/
+/************************************************************************************/
+/*****************************interface products statistic*******************************/
+.up{
+color: green;
+}
+.down{
+    color: red;
+}
+.tab{
+    width:60%;
+    margin: 0 0 0 0;
+}
+.sel-prod{
+ width: 40%;
+ flex-shrink: 0;
+ margin: 2px 2px 0 2px;
+}
+.tab-sel{
+    display: flex;
+}
+.par-sel{
+    font-size: 18px;
+    font-weight: 600;
+   
+
+}
+.par-sel:hover{
+    background: beige;
+    cursor:default;
+}
+.img-sel{
+    border: none;
+}
+.wid-prof{
+    width: 50%;
+}
+.mar-sel{
+    margin-bottom: 2px;
+}
+/*****************************interface products statistic*******************************/
+/****************************************************************************************/
+/*****************************interface products posts*******************************/
+.msj-list{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    height: fit-content;
+    display: flex;
+    height: 100%;
+}
+.interf-msj{
+    width: 60%;
+    background: beige;
+    height: 100%;
+}
+.inter-par{
+display: flex;
+background: #007bff5e;
+align-items: center;
+margin-bottom: 3px;
+
+}
+.inter-par p{
+padding: 10px;
+}
+.bar-outil{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.bar-outil i{
+    color: #111;
+}
+.bar-outil button{
+   background: rgb(255, 255, 255);
+   border: none;
+   border-radius: 4px;
+   width: 28px;
+   height: 28px;
+   outline: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.input-wrapper{
+    width: fit-content;
+    margin: 1px;
+    display: flex;
+    margin: 0 0 0 10px;
+}
+.bar-outil select{
+    width: fit-content;
+    height: 28px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+.bar-outil input{
+    border-radius: 2px;
+    width: 40px;
+    height: 20px;
+    padding: 0;
+}
+.bloc-text{
+    width: 100%;
+    height: 50vmin;
+   
+.input-text{
+    height: 80%;
+    padding: 30px; 
+    background-color: white;
+    width:80%;
+    position: relative;
+    left: 2.5%;
+    top: 2px;
+    outline: none;
+    overflow: hidden;
+}
+    
+}
+.msj-priv{
+    display: block;
+    width: 90%;
+    margin-left:3% ;
+    height: 90%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    font-size: 17px;
+    position: relative;
+    top: 5px;
+}
+.envoyer{
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.envoyer span a{
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-right: 40px;
+    transition: .5s;
+}
+.envoyer span a:hover{
+    color: red;
+}
+.social{
+    padding: 10px 0px 10px 30px;/* top right bottom left*/
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+    background: beige;
+    color: blue;
+    margin: 0 5px;
+}
+.social i{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.social .inst{
+    color: #dc3545;
+}
+.comment-flo ul{
+display: inline;
+height: 100%;
+list-style: none;
+}
+.comment-flo{
+    width: 150px;
+    
+}
+.comment-flo ul li{
+    position: relative;
+    top: 0;
+    background: rgba(0, 0, 255, 0.24);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 0 15px 0px;
+    width: 100px;
+    text-align: center;
+}
+.comment-flo ul li span{
+    margin-right: 5px;
+}
+.prof-flow{
+    margin-left: 10px;
+}
+.msj-list-env{
+    margin: 0 0 0 2px;
+    height: 55px;
+    width: 290px;
+    overflow: hidden;
+}
+.all-list-msj{
+    height: fit-content;
+    padding: 10px;
+    margin: 0 0 0 2px;
+    background: beige;
+}
+.foll-data{
+    width: 20%;
+    margin-left: -15px;
+}
+.foll-data span{
+    color: blue;
+    cursor: pointer;
+}
+.foll-prof{
+    height: 100%;
+    width: 80%; 
+}
+.prop-prf{
+width: 100%;
+}
+.imj-foll{
+    flex-shrink: 0;
+}
+.title-msj{
+    padding: 5px;
+    font-weight: 600;
+}
+.marj-bott{
+    margin-bottom: 2px;
+}
+.chec-posts{
+padding: 15px;
+background: beige;
+margin: 0 0 0 2px;
+}
+.all-foll{
+    width:fit-content;
+    background: rgba(0, 0, 255, 0.123);
+}
+.input-wrapper{
+display: flex;
+align-items: center;
+flex-direction: column-reverse;
+position: relative;
+top: -5px;
+}
+.input-wrapper input{
+    width: 27px;
+    height: 0;
+}
+.input-wrapper label{
+    margin: 10px 0 0 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/*****************************interface products posts*******************************/
+/*****************************************************************************************/
+.interface-menu{
+    width: 60%;
+    position: relative;
+    left: 20%;
+    display: flex;
+    height: 380px;    
+    padding: 20px;
+}
+.sitting-item{
+    width: 30%;
+    background: beige;
+    padding: 10px;
+    margin: 0 2px 0 0;/* top right bottom left*/
+}
+.sitting-interf{
+    background:beige;
+    width: 70%;
+}
+.pref-compt,.security,.imj-prof-sitting{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 10px;
+}
+.pref-compt i,.security i,.imj-prof-sitting i{
+font-size: 20px;
+}
+/******************************************************mode sitting change name******/
+/*****************************************************************************************/
+.inter-compt,.inter-securtiy{
+    height: calc(100% - 30px);
+    margin: 30px 0 0 20px;
+    position: relative;
+
+}
+.inter-compt input,.inter-securtiy input{
+height: 40px;
+border-radius: 0;
+margin-bottom: 10px;
+font-size: 17px;
+transition: .5s;
+}
+.btn-zon{
+    width: fit-content;
+    display: inline;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 0 0;
+}
+.inter-compt input[type='button'],.inter-securtiy input[type='button']{
+    display: inline;
+    width: 150px;
+    cursor: pointer;
+    font-size: 17px;
+    background: rgba(0, 0, 255, 0.315);
+}
+.inter-compt input[type='text']:hover,.inter-securtiy input[type='password']:hover{
+    scale: 0.98;
+}
+/******************************************************mode sitting change password******/
+/**********************************************************************************************/
+.image-compte{
+    display: flex;
+
+}
+.imj-comt{
+    width: 45%;
+    height: 340px;
+    margin: 10px 0 0 10px;
+}
+/******************************************************mode sitting box image******/
+.box-image{
+    background-size: cover;  
+    height: 200px;
+    display: none;    
+}
+/**********************************************************************************/
+.box-image img{
+    width: 100%;
+    height: 100%;
+}
+.upl-image input{
+    display: none;
+}
+.upl-image{
+    height: 220px;
+    position: relative;
+    background:#777;
+}
+.upl-image label{
+    padding: 20px;
+    color:white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    text-align: center;
+    border: 5px dashed white;
+    cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.filter-imj{
+    padding-top: 5px;
+    width: 65%;
+    direction: rtl;
+    margin: 10px 0 0 10px;
+}
+.filter-imj input{
+    direction: rtl;
+    margin: 10px 0;
+}
+.btn-down a{
+    display: inline-block;
+    font-size: 17px;
+    width: 90px;
+    margin: 0 0px 0 30px;
+    cursor: pointer;
+
+}
+.btn-down{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    padding: 15px;
+    transition: .5s;
+}
+.btn-down span{
+    display: inline-block;
+    font-size: 17px;
+    padding: 15px;
+    color:#777;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn-down a:hover,.btn-down span:hover{
+    background:beige;
+    color: red;
+}
+.error{
+    font-size: 17px;
+    color: red;
+}
+#total{
+    margin: 0 0 0 20px;
+    padding: 8px;
+    border-radius: 4px;
+    background: red;
+    color: white;
+}
+#total::before{
+content: 'Total :';
+}
+.bar-outil span{
+    font-weight: 500;
+    margin: 0 20px 0 10px;
+}
+.filter-imj ul{
+list-style: none;
+margin: 0 20px 0 0;
+height: 70%;
+width: 90%;
+}
+.filter-imj input{
+    width: 90%;
+}
+.filter-imj .btn-img{
+    display: flex;
+    justify-content: center;
+}
+.filter-imj .btn-img button{
+    width: 40%;
+    border-radius: 8px;
+    background: rgba(0, 0, 255, 0.582);
+   
+}
+.filter-imj ul li label{
+    margin: 0 10px 0 0;
+}
+
+.style i{
+    display: grid;
+    place-items:left ;
+    width: 30%;
+    margin: 0;
+}
+.style p{
+    width: 100%;
+}
+.box-image img{
+border-radius: 0;
+}
+.box-image{
+display: block;
+}
+
+/******************************************************mode interface generale sitting-menu******/
+/*****************************************************************************/
+/***********************************interface menu image******************************************/
+/************************************************************************/
+@media (max-width:650px) {
+    .nav-media,.media-nav,.nav-cust-media,.nav-prod-media,.nav-post-menu{
+        flex-wrap: wrap;
+        gap: 5px;
+        height: fit-content;
+        padding: 5px;
+    }
+    .img-dash{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+    }
+    .img-dash .img-alt{
+        width: 30px;
+        height: fit-content;
+    }
+    .img-dash img-alt img{
+        width: 100%;
+    }
+    .log-menu #dash,#tech{
+font-size: 12px;
+    }
+    .search-total{
+        flex-direction: row-reverse;
+        border-radius: 0px ;
+        border: -1px solid blue;
+        background:rgb(0, 0, 255);
+        position: relative;
+        top: 10%;
+        left: auto;
+    }
+    .search-total input{
+        box-shadow: none;
+    }
+    .box-home-index .box-cat ,.box-cust,.ssm{
+        width: 100%;
+        height: 100px;
+        gap: 10%;
+        margin: 0 0 5px 0;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+    .box-cust-media,.filter,.table-cast,.title-nav-box,.products-stock,.kinds,.tab-prod-media,.tab-sel,.msj-list,.interface-menu,.adup-prod{
+      position: relative;
+      left: 2px;
+      right: 2px;
+    }
+    .box-cust-media,.cust-menu-media,.title-nav-box,.products-stock,.kinds,.tab-sel,.msj-list,.interf-msj,.all-foll,.marj-bott,.interface-menu,.adup-prod,.tab-prod-media{
+width: 100%;
+    }
+    .all-list-msj{
+        margin: 2px 0 0 0;
+        border-bottom: 2px solid #777;
+    }
+    .products-stock{
+      flex-wrap: wrap;
+    }
+    .box-bar p{
+        text-align: left;
+        width: fit-content;
+        font-size: 12px;
+    }
+    .filter p,.kinds p{
+        font-size: 17px;
+}
+.tab-prod-media{
+    font-size: 14px;
+}
+    .client-table{
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    .nom-client p{
+        font-size: 14px;
+    }
+    .client-box-statistic{
+        width: 100%;
+    
+    }
+    .progress-bar{
+        background: #7777773a;
+        width: 100%;
+    }
+    .box-cat::after{
+        width: 2px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+    } 
+    .table-cast,.filter{
+width: 100%;
+font-size: 12px;
+    }
+    .tab-sel{
+        display: flex;
+        flex-direction: column;
+    }
+    .tab,.sel-prod{
+        width: 100%;
+    }
+    .msj-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .stat{
+        gap: 30%;
+        }
+        #iphone{
+            width: 50px;
+        }
+        .style p{
+           font-size:12px ; 
+        }
+        .imj-comt{
+            width: 100%;
+            height: fit-content;
+        }
+        .upl-image{
+           width: 97%;
+        }
+        .image-compte{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .filter-imj ul{
+        display: none;
+        }
+        .container{
+            width: 100%;
+        }
+        .card-description{
+            display: none;
+        }
+        .forget-pass{
+            width: 80%;
+            height: 100%;
+        }
+       .dell-prod{
+        width: fit-content;
+       }
+       #p-dell{
+       font-size: 12px;
+       }
+       .btn-dell-all{
+        position: relative;
+        left: 0;
+       }
+       .star i{
+      color:9px;
+      margin: 0 0 0 0;
+       }
+       .menu:hover{
+        background: black;
+        width: 52px;
+    
+    }
+    .all-foll{
+        background: white;
+    }
+    @keyframes Customers-1{
+
+    from{
+    width: 2px;
+        }to{
+    width: 100%;
+        }
+    }
+    @keyframes products-2{
+    
+        from{
+    width: 2px;
+        }to{
+    width: 100%;
+        }
+    }
+     @keyframes Finance-3{
+    
+        from{
+            width: 2px;
+                }to{
+            width: 100%;
+                }
+            }
+    @keyframes static-4{
+    
+        from{
+            width: 2px;
+                }to{
+            width: 100%;
+                }
+            }
+} 
+@media(min-width:651px) and (max-width:1150px){
+    .box-home-index .box-cat,.box-cust,.ssm{
+        width: calc(50% - 4px);
+        height: 100px;
+        margin: 0 0px 2px 2px;
+        flex-wrap: nowrap;
+        position: relative;
+    }
+   .stat{
+    min-height: 120px;
+   }
+    .msj-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .interf-msj,.all-foll,.marj-bott{
+        width: 100%;
+    }
+    .all-list-msj{
+        margin: 2px 0 0 0;
+        border-bottom: 2px solid #777;
+    }
+    .products-stock{
+        flex-wrap: wrap;
+      }
+    .box-bar p{
+        text-align: left;
+        width: fit-content;
+        font-size: 14px;
+    }
+    .search-total{
+        position: relative;
+        top: 5%;
+    }
+    .box-cat::after{
+        width: 3px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+    } 
+    .table-cast,.center p{
+        font-size: 11px;
+    }
+    .kinds p{
+        font-size: 14px;
+    }
+    .tab-sel{
+        display: flex;
+        flex-direction: column;
+    }
+    .tab,.sel-prod,.interface-menu{
+        width: 100%;
+    }
+    #iphone{
+        width: 50px;
+    }
+    .interface-menu{
+        position: relative;
+        left: 0;
+    }
+    .btn-down{
+        width: 100%;
+        display: inline-block;
+    }
+    .container{
+        width: 90%;
+    }
+    .card-description{
+        display: none;
+    }
+    .forget-pass{
+        width: 80%;
+        height: 100%;
+    }
+    .comment-flo ul li{
+        width: 60%;
+        position: relative;
+        top: 1px;
+    }
+    .msj-list{
+        width:80% ;
+        position: relative;
+        left: 10%;
+    }
+    .all-foll{
+        background: white;
+    }
+    #label{
+        width: 40%;
+        height: 10%;
+    }
+    @keyframes Customers-1{
+
+        from{
+        width: 2px;
+            }to{
+        width: 100%;
+            }
+        }
+        @keyframes products-2{
+        
+            from{
+        width: 2px;
+            }to{
+        width: 100%;
+            }
+        }
+         @keyframes Finance-3{
+        
+            from{
+                width: 2px;
+                    }to{
+                width: 100%;
+                    }
+                }
+        @keyframes static-4{
+        
+            from{
+                width: 2px;
+                    }to{
+                width: 100%;
+                    }
+                }
+
+
+                .client-box-statistic{
+                    width: 95%;
+                }
+
+
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
